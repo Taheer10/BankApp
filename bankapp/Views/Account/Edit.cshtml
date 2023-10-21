@@ -1,0 +1,73 @@
+﻿@model bankapp.Models.NewAccount.AccountCreate
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>AccountCreate</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="AccNo" class="control-label"></label>
+                <input asp-for="AccNo" class="form-control" readonly />
+                <span asp-validation-for="AccNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InterestRate" class="control-label"></label>
+                <input asp-for="InterestRate" class="form-control" />
+                <span asp-validation-for="InterestRate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DepositAmt" class="control-label"></label>
+                <input asp-for="DepositAmt" class="form-control" />
+                <span asp-validation-for="DepositAmt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreatedAt" class="control-label"></label>
+                <input asp-for="CreatedAt" class="form-control" readonly />
+                <span asp-validation-for="CreatedAt" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Member</label>
+                <div class="form-control mt-2">
+                    <span>@Model.Member.FirstName</span>
+                    <span>@Model.Member.LastName</span>
+                </div>
+            </div>
+           
+            <div class="form-group mt-2 mb-2" >  
+                <label>Account Type</label>
+                <span class="form-control">@Model.AccountType.AccountName</span>
+            </div>
+
+            <div class="form-group" style="display:none" >
+                <label asp-for="MemberId" class="control-label"></label>
+                <input asp-for="MemberId" class="form-control" readonly />
+                <span asp-validation-for="MemberId" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="display:none">
+                <label asp-for="AccountTypeId" class="control-label" ></label>
+                <input asp-for="AccountTypeId" class="form-control" readonly/>
+                <span asp-validation-for="AccountTypeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" /> 
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="List">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

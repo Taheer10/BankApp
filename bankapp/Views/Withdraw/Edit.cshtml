@@ -1,0 +1,60 @@
+﻿@model bankapp.Models.NewAccount.WithdrawAccount
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>AccountCreate</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="WId" />
+            <div class="form-group">
+                <label  class="control-label">ACC NO</label>
+                <span class="form-control">@Model.AccountCreate.AccNo</span>
+                <input asp-for="AccountCreateId" class="form-control" readonly  style="display:none"/>
+                <span asp-validation-for="AccountCreateId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">AccountType</label>
+                <span class="form-control">@Model.AccountType.AccountName</span>
+
+                <input asp-for="AccountTypeId" class="form-control" style="display:none"/>
+                <span asp-validation-for="AccountTypeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WithdrawAmt" class="control-label"></label>
+                <input asp-for="WithdrawAmt" class="form-control" />
+                <span asp-validation-for="WithdrawAmt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WithdrawAt" class="control-label"></label>
+                <input asp-for="WithdrawAt" class="form-control" readonly />
+                <span asp-validation-for="WithdrawAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RemainingAmt" class="control-label"></label>
+                <input asp-for="RemainingAmt" class="form-control" readonly />
+                <span asp-validation-for="RemainingAmt" class="text-danger"></span>
+            </div>
+   
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="List">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

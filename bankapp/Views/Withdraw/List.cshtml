@@ -1,0 +1,63 @@
+﻿@model IEnumerable<bankapp.Models.NewAccount.WithdrawAccount>
+
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1>List</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AccountCreate.AccNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AccountType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WithdrawAmt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WithdrawAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RemainingAmt)
+            </th>
+            
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AccountCreate.AccNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AccountType.AccountName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WithdrawAmt)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WithdrawAt)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RemainingAmt)
+                </td>
+               
+               
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.WId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.WId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.WId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
