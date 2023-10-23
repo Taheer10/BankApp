@@ -61,3 +61,21 @@
         }
     </tbody>
 </table>
+
+<script>
+    $(document).ready(function(){
+        var totalWithdrawAmount = 0;
+
+        // Iterate through each row in the table
+        $('tbody tr').each(function(){
+            var withdrawAmt = parseFloat($(this).find('td:nth-child(3)').text().trim());
+            
+            if(!isNaN(withdrawAmt)) {
+                totalWithdrawAmount += withdrawAmt;
+            }
+        });
+
+        // Add a new row to display the total amount
+        $('tbody').append('<tr><td colspan="4"><strong>Total Withdraw Amount:</strong></td><td><strong>' + totalWithdrawAmount.toFixed(2) + '</strong></td></tr>');
+    });
+</script>

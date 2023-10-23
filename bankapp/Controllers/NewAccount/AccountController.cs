@@ -4,6 +4,7 @@ using bankapp.Models.NewAccount;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 
 namespace bankapp.Controllers.NewAccount
 {
@@ -183,6 +184,22 @@ namespace bankapp.Controllers.NewAccount
         }
 
 
+        //[HttpGet]
+        //public JsonResult GetById(int Id)
+        //{
+        //    var result = _context.accountCreate.Where(x => x.Id == Id).FirstOrDefault().DepositAmt;
+        //    return Json(new { data = JsonConvert.SerializeObject(result) });
+        //}
+
+        [HttpGet]
+        public JsonResult GetById(int Id)
+        {
+            var result = _context.accountCreate
+                             .Where(x => x.Id == Id)
+                             .Select(x => x.DepositAmt)
+                             .FirstOrDefault();
+            return Json(new { data = result });
+        }
 
 
 
