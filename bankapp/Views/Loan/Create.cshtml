@@ -1,0 +1,63 @@
+﻿@model bankapp.Models.Loan.Loan
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Loan</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="LoanTypeId" class="control-label"></label>
+                <select asp-for="LoanTypeId" class="form-control" asp-items="ViewBag.LoanTypeId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="LoanNo" class="control-label"></label>
+                <input asp-for="LoanNo" class="form-control" />
+                <span asp-validation-for="LoanNo" class="text-danger"></span>
+            </div>
+           
+          <div class="form-group">
+                <label asp-for="MemberId" class="control-label"></label>
+                <select asp-for="MemberId" class ="form-control" asp-items="ViewBag.MemberId"></select>
+            </div>
+           
+            <div class="form-group">
+                <label asp-for="LoanRate" class="control-label"></label>
+                <input asp-for="LoanRate" class="form-control" />
+                <span asp-validation-for="LoanRate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LoanAmt" class="control-label"></label>
+                <input asp-for="LoanAmt" class="form-control" />
+                <span asp-validation-for="LoanAmt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LoanDuration" class="control-label"></label>
+                <input asp-for="LoanDuration" class="form-control" />
+                <span asp-validation-for="LoanDuration" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreatedAt" class="control-label"></label>
+                <input asp-for="CreatedAt" class="form-control" />
+                <span asp-validation-for="CreatedAt" class="text-danger"></span>
+            </div>
+           
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

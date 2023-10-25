@@ -1,4 +1,5 @@
 ﻿using bankapp.Models;
+using bankapp.Models.Loan;
 using bankapp.Models.member;
 using bankapp.Models.NewAccount;
 using Microsoft.EntityFrameworkCore;
@@ -15,8 +16,10 @@ namespace bankapp.Data
         public DbSet<Tole> tole { get; set; }
         public DbSet<AccountCreate> accountCreate { get; set; }
         public DbSet<AccountType> accountType { get; set; }
-
         public DbSet<WithdrawAccount> withdrawAccount { get; set; }
+        public DbSet<Loan> loan { get; set; }
+        public DbSet<LoanType> loanType { get; set; }
+
 
 
     }

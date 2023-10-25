@@ -14,21 +14,21 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="WId" />
             <div class="form-group">
-                <label  class="control-label">ACC NO</label>
+                <label class="control-label">ACC NO</label>
                 <span class="form-control">@Model.AccountCreate.AccNo</span>
-                <input asp-for="AccountCreateId" class="form-control" readonly  style="display:none"/>
+                <input asp-for="AccountCreateId" class="form-control" readonly style="display:none" />
                 <span asp-validation-for="AccountCreateId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label class="control-label">AccountType</label>
                 <span class="form-control">@Model.AccountType.AccountName</span>
 
-                <input asp-for="AccountTypeId" class="form-control" style="display:none"/>
+                <input asp-for="AccountTypeId" class="form-control" style="display:none" />
                 <span asp-validation-for="AccountTypeId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="WithdrawAmt" class="control-label"></label>
-                <input asp-for="WithdrawAmt" class="form-control" />
+                <input id="WithdrawAmt" asp-for="WithdrawAmt" class="form-control" onchange="calculateAmt()" />
                 <span asp-validation-for="WithdrawAmt" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -41,7 +41,7 @@
                 <input asp-for="RemainingAmt" class="form-control" readonly />
                 <span asp-validation-for="RemainingAmt" class="text-danger"></span>
             </div>
-   
+
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
@@ -53,8 +53,50 @@
     <a asp-action="List">Back to List</a>
 </div>
 
-@section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+
+
+    function calculateAmt() {
+        var did = $("#AccountCreateId").val();
+
+
+        if (did > 0) {
+            $.ajax({
+                type: "GET",
+                url: "https://localhost:7231/" + "Account/GetById",
+                data: { Id: did },
+                success: function (result) {
+                    var depositAmt = parseFloat(result.data); // Parse directly from the response
+
+                    if (!isNaN(depositAmt)) {
+                        alert(depositAmt);
+
+                        var withdrawAmt = $("#WithdrawAmt").val();
+                        if (depositAmt >= withdrawAmt) {
+                            var RemainingAmt = depositAmt - parseFloat(withdrawAmt);
+                            alert(RemainingAmt)
+                            $("#RemainingAmt").val(RemainingAmt);
+                        } else {
+                            alert("Error:  Withdraw  Amount Cannot be Bigger than Deposit Amount  ");
+
+                        }
+
+                    } else {
+                        alert("Error: Invalid Deposit Amount");
+                    }
+                },
+                error: function () {
+                    alert("Error fetching data.");
+                }
+            });
+        } else {
+            $("#RemainingAmt").text('');
+        }
     }
-}
+
+
+
+
+</script>
