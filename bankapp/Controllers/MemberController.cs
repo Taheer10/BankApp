@@ -152,7 +152,7 @@ namespace bankapp.Controllers
         {
           
 
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 if (!_context.members.Any(m => m.EmailId == member.EmailId && m.ContactNo == member.ContactNo ))
                 {

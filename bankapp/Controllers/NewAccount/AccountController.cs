@@ -89,23 +89,30 @@ namespace bankapp.Controllers.NewAccount
 
         public IActionResult Create(AccountCreate accountCreate)
         {
-            if (ModelState.IsValid)
-            {
-                if(!_context.accountCreate.Any(m => m.AccNo == accountCreate.AccNo  && m.AccountTypeId == accountCreate.AccountTypeId  &&  m.MemberId == accountCreate.MemberId))
-                {
-                    _context.Add(accountCreate);
-                    _context.SaveChanges();
-                    RedirectToAction(nameof(List));
-                }
-                else
-                {
-                    return Json("Account already exists.");
+            //if (ModelState.IsValid)
+            //{
+            //    if(!_context.accountCreate.Any(m => m.AccNo == accountCreate.AccNo  && m.AccountTypeId == accountCreate.AccountTypeId  &&  m.MemberId == accountCreate.MemberId))
+            //    {
+            //        _context.Add(accountCreate);
+            //        _context.SaveChanges();
+            //        RedirectToAction(nameof(List));
+            //    }
+            //    else
+            //    {
+            //        return Json("Account already exists.");
 
-                }
+            //    }
 
 
-            }
-
+            //}
+            //if (ModelState.IsValid) { 
+            //    _context.Add(accountCreate);
+            //_context.SaveChanges();
+            //RedirectToAction(nameof(List));
+            //}
+            //return RedirectToAction(nameof(List));
+            _context.Add(accountCreate);
+            _context.SaveChanges();
             return RedirectToAction(nameof(List));
         }
 

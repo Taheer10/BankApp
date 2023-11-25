@@ -63,7 +63,7 @@
         if (did > 0) {
             $.ajax({
                 type: "GET",
-                url: "https://localhost:7231/" + "Account/GetById",
+                url: "https://localhost:44377/" + "Account/GetById",
                 data: { Id: did },
                 success: function (result) {
                     var depositAmt = parseFloat(result.data); // Parse directly from the response
