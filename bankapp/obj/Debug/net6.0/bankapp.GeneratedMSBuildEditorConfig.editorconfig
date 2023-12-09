@@ -9,105 +9,109 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = bankapp
 build_property.RootNamespace = bankapp
-build_property.ProjectDir = D:\Dotnet\bankapp-master\bankapp-master\bankapp\bankapp\
+build_property.ProjectDir = D:\Dotnet Project\bankapp\bankapp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Dotnet\bankapp-master\bankapp-master\bankapp\bankapp
+build_property.MSBuildProjectDirectory = D:\Dotnet Project\bankapp\bankapp
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/Account/Create.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/Account/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/Account/Delete.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/Account/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/Account/Details.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/Account/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/Account/Edit.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/Account/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/Account/List.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/Account/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/Home/Index.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/Home/Privacy.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/Loan/Create.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/Loan/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hblxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/Loan/List.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/Loan/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hblxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/Member/Create.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dotnet Project/bankapp/bankapp/Views/Member/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/Member/Delete.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/Member/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/Member/Details.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/Member/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/Member/Edit.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/Member/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/Member/List.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/Member/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/Shared/Error.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/Withdraw/Create.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/Withdraw/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2l0aGRyYXdcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/Withdraw/Delete.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/Withdraw/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2l0aGRyYXdcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/Withdraw/Details.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/Withdraw/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2l0aGRyYXdcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/Withdraw/Edit.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/Withdraw/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2l0aGRyYXdcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/Withdraw/List.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/Withdraw/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2l0aGRyYXdcTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/_ViewImports.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/_ViewStart.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dotnet/bankapp-master/bankapp-master/bankapp/bankapp/Views/Shared/_Layout.cshtml]
+[D:/Dotnet Project/bankapp/bankapp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-mpmgdqbyhd

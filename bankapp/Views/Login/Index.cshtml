@@ -1,0 +1,40 @@
+﻿@model bankapp.Models.Login.Login
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Login</h1>
+
+<h4>AccountCreate</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Verify" asp-controller="Login">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="username" class="control-label"></label>
+                <input id="username" asp-for="username" class="form-control" />
+                <span asp-validation-for="username" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="password" class="control-label"></label>
+                <input id="WithdrawAmt" asp-for="password" class="form-control"  type="password"/>
+                <span asp-validation-for="password" class="text-danger"></span>
+            </div>
+
+         
+            <span id="test" class="text-danger"></span>
+
+            <div class="form-group">
+                <input type="submit" value="Login" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+

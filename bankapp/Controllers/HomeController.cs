@@ -18,6 +18,11 @@ namespace bankapp.Controllers
             return View();
         }
 
+        public IActionResult Logout()
+        {
+            return RedirectToAction("Index","Login");
+        }
+
         public IActionResult Privacy()
         {
             return View();
